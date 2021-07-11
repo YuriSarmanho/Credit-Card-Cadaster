@@ -6,26 +6,26 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
-    <form>
+    <h1 id="Title">Cadastro de Cartão</h1>
+    <form id="Forms">
         <div  class="questionsArea">
-            Numero do Cartão <p><input type="text" class="InputText"></p>
+            Numero do Cartão <p><input type="text" autocomplete="off" id="CardNumber"></p>
         </div>
         <div class="questionsArea">
-            Noem do propríentário  <p><input type="text" class="InputText"></p>
+            Nome do propríentário  <p><input type="text" id="HonerName"></p>
         </div>
         <div class="questionsArea">
-            Data de vencimento<p><input type="text" class="InputText"></p>
+            Data de vencimento<p><input type="text"  id="DueDate"></p>
         </div>
         <div class="questionsArea">       
-            Código de segurança<p><input type="text" class="InputText"></p>
+            Código de segurança<p><input type="text" autocomplete="off" maxlength="3" id="SecurityCode"></p>
         </div>
         <div class="questionsArea">
-            CPF<p><input type="text" class="InputText"></p>
+            CPF<p><input type="text" maxlength="14" id="cpf" autocomplete="off"></p>
         </div>
-        <button  type="submit" class="InputText">Confirmar</button>
+        <button  type="submit" id="ConfirmButton">Confirmar  </button>
     </form>
 </body>
 </html>
