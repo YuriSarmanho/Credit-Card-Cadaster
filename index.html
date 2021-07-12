@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Cartão de Crédito</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
@@ -11,13 +11,13 @@
     <h1 id="Title">Cadastro de Cartão</h1>
     <form id="Forms">
         <div  class="questionsArea">
-            Numero do Cartão <p><input type="text" autocomplete="off" id="CardNumber"></p>
+            Numero do Cartão <p><input type="text" autocomplete="off" maxlength="20" id="CardNumber"></p>
         </div>
         <div class="questionsArea">
             Nome do propríentário  <p><input type="text" id="HonerName"></p>
         </div>
         <div class="questionsArea">
-            Data de vencimento<p><input type="text"  id="DueDate"></p>
+            Data de vencimento<p><input type="text" maxlength="5" id="DueDate"></p>
         </div>
         <div class="questionsArea">       
             Código de segurança<p><input type="text" autocomplete="off" maxlength="3" id="SecurityCode"></p>
