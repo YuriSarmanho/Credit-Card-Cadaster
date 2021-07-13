@@ -5,11 +5,9 @@ export default class ImplementSpecialCaracters{
     cardNumeberSpace(){
     }
     implementCpfCaracters(){
-       console.log(this.cpf.value.length)
         if(this.cpf.value.length == 3 || this.cpf.value.length == 7){
-            console.log("entrou")
             return cpf.value += "."
-        }else if(cpf.value.lenght == 11){
+        }else if(cpf.value.length == 11){
             return cpf.value += "-"
         }
     }
