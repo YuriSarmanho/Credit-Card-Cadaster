@@ -1,3 +1,4 @@
+//Colocar todas essa funções em um arquivo responsável e refatorar o código
 class App{
     constructor(){
         this.cpf = document.getElementById("cpf")
