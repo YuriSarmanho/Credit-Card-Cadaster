@@ -1,23 +1,26 @@
-//sem o type = "module", e colocando diretamete a função estava  funcionando
-//mas nao esta funcionando quando é class 
-//import ImplementSpecialCaracters from './src/spaceAndCaracteres.js'
-function cpfApp(){
-    cpf = document.getElementById("cpf")
-    if(cpf.value.length == 3 || cpf.value.length == 7){
-        return cpf.value += "."
-    }else if(cpf.value.length == 11){
-        return cpf.value += "-"
+class App{
+    constructor(){
+        this.cpf = document.getElementById("cpf")
+        this.cardNumber = document.getElementById("CardNumber")
+        this.dueDate = document.getElementById("DueDate")
+        this.specialCaracters = new SpecialCaracters();
+    }
+    implementCpfCaracters(){
+        if(cpf.value.length == 3 || cpf.value.length == 7){
+            return cpf.value += "."
+        }else if(cpf.value.length == 11){
+            return cpf.value += "-"
+        }    
+    }
+    cardNumberSpace(){
+        if(CardNumber.value.length == 4 ||CardNumber.value.length == 9 ||CardNumber.value.length == 14){
+            return CardNumber.value += " "
+        }
+    }
+    DueDate(){
+        if(DueDate.value.length == 2){
+            return DueDate.value += "/"
+        }
     }
 }
-// class App{
-//     constructor(){
-//         this.SpecialCaracters = new ImplementSpecialCaracters();
-//     }
-//     init(){
-//         this.SpecialCaracters.implementCpfCaracters();
-//     }
-// }
-// document.addEventListener("DOMContentLoaded", function(){
-//     const app = new App();
-//     app.init();
-// })
+const app = new App();
