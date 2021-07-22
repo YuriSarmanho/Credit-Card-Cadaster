@@ -1,6 +1,26 @@
+// import Helper from './src/Helper'
 
-class App{
-    constructor(){
+// nome de classe: começa com maiuscula ex.: Helper 
+// PascalCase 
+
+// nome de métodos ou funções
+// lowerCase + camelCase
+
+// nome de variáveis
+// camelCase
+// exceção (constantes)
+
+// Calcular radianos
+// pi = 3.14....
+// PI_VALUE = 3.14.....
+
+// javascript
+// let, var, const
+// let -> var (escopo fechado)
+// const numero = 10
+
+class App {
+    constructor() {
         this.cpf = document.getElementById("cpf")
         this.cardNumber = document.getElementById("CardNumber")
         this.dueDate = document.getElementById("DueDate")
@@ -8,13 +28,13 @@ class App{
         this.specialCaracters = new SpecialCaracters();
     }
 
-    AddCpfCaracters(){
+    AddCpfCaracters() {
         this.specialCaracters.implementCpfCaracters(cpf);
     }
-    AddCardNumberSpace(){
+    AddCardNumberSpace() {
         this.specialCaracters.cardNumberSpace(CardNumber);
     }
-    AddDueDateCaracter(){
+    AddDueDateCaracter() {
         this.specialCaracters.DueDate(DueDate)
     }
 
