@@ -1,6 +1,6 @@
 class SpecialCaracters {
     constructor() {
-        this.Helper = new Helper();
+        this.Helper = new PositionHelper();
     }
     implementCpfCaracters(cpf) {
         if (this.Helper.isDashPosition(cpf)) {
@@ -14,7 +14,7 @@ class SpecialCaracters {
             return CardNumber.value += " "
         }
     }
-    DueDate() {
+    dueDate() {
         if (this.Helper.isBackSlashPosition(DueDate)) {
             return DueDate.value += "/"
         }

@@ -35,7 +35,7 @@ class App {
         this.specialCaracters.cardNumberSpace(CardNumber);
     }
     AddDueDateCaracter() {
-        this.specialCaracters.DueDate(DueDate)
+        this.specialCaracters.dueDate(DueDate)
     }
 
 }
