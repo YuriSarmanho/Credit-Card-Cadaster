@@ -10,11 +10,25 @@
     <link rel="stylesheet" href="./Style/FormStyle.css">
     <script src="./src/Helper.js"></script>
     <script src="./src/spaceAndCaracteres.js"></script>
+    <!-- <script src="./app.js " type="module"></script> -->
     <script src="./app.js "></script>
 </head>
 <body>
+    <h1 id="title">Cadastro de Cartão</h1>
+    <div class="navbar">
+        <div class="container">
+            <a href="#">Name<span>Market</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Cadaster</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
     <div id="container">
-        <h1 id="title">Cadastro de Cartão</h1>
         <form id="Forms">
             <div  class="questionsArea">
                 Numero do Cartão <p><input type="text" id="CardNumber" maxlength="19" autocomplete="off" onkeyup="app.AddCardNumberSpace()"></p>

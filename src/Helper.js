@@ -1,32 +1,20 @@
-class Helper{
-   isDashPosition(cpf){
-       if(cpf.value.length == 3 || cpf.value.length == 7){
-           return true
-       }
-       return false
-   }
-   isDotPosition(cpf){
-       if(cpf.value.length == 11){
-           return true
-       }
-       return false
-   }
-    isCardNumberSpace(CardNumber){
-        if(this.isSpacePosition(CardNumber)){
-            return true 
-        }   
-        return false
+// export default class Helper{
+// mais especifico no nome
+// StringHelper
+class PositionHelper {
+    isDashPosition(cpf) {
+        return cpf.value.length == 3 || cpf.value.length == 7
     }
-    isBackSlashPosition(DueDate){
-        if(DueDate.value.length == 2){
-            return true
-        }
-        return false 
+    isDotPosition(cpf) {
+        return cpf.value.length == 11
     }
-    isSpacePosition(CardNumber){
-        if(CardNumber.value.length == 4 || CardNumber.value.length == 9 ||CardNumber.value.length == 14){
-            return true 
-        }   
-        return false
+    isCardNumberSpace(CardNumber) {
+        return this.isSpacePosition(CardNumber)
+    }
+    isBackSlashPosition(DueDate) {
+       return DueDate.value.length == 2
+    }
+    isSpacePosition(CardNumber) {
+        return CardNumber.value.length == 4 || CardNumber.value.length == 9 || CardNumber.value.length == 14
     }
 }
