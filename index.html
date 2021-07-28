@@ -28,25 +28,32 @@
         </div>
     </div>
 
-    <div id="container">
+    <div id="containerForms">
         <form id="Forms">
+
             <div  class="questionsArea">
                 Numero do Cartão <p><input type="text" id="CardNumber" maxlength="19" autocomplete="off" onkeyup="app.AddCardNumberSpace()"></p>
             </div>
+
             <div class="questionsArea">
                 Nome do propríentário  <p><input type="text" id="HonerName"></p>
             </div>
+
             <div class="questionsArea">
                 Data de vencimento<p><input type="text"id="DueDate" placeholder="MM/YY" maxlength="5"  onkeyup="app.AddDueDateCaracter()"></p>
             </div>
+
             <div class="questionsArea">       
                 Código de segurança<p><input type="text" id="SecurityCode" autocomplete="off" maxlength="3" ></p>
             </div>
+
             <div class="questionsArea">
                 CPF<p><input type="text" id="cpf" placeholder="___.___.___-__" maxlength="14"autocomplete="off" onkeyup="app.AddCpfCaracters()"></p>
             </div>
+
             <button  type="submit" id="ConfirmButton">Confirmar</button>
         </form>
+        <div class="CrediCard"></div>
     </div>
 </body>
 </html>
