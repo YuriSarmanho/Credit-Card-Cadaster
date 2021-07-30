@@ -49,7 +49,7 @@ p input{
   border-radius: .3em;
   width: 90%;
   height: 1.5em;
-  color: #65A73A;
+  color: #497a29;
   font-size:1em;
   font-weight:bold; 
 }
@@ -60,5 +60,6 @@ button{
   font-weight:bold;
   border-radius: 2em;
   padding: .5em 1em .5em 1em;
-  margin: .5em 0 0 1em;
+  margin: 2em 0 0 1em;
+  cursor: pointer;
 }
