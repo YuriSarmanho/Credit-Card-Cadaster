@@ -1,12 +1,13 @@
 body {
   margin: 0;
+  background-color: #F2EFF3;
   font-family: 'Poppins';
-  background: F2F2F2;
 }
 
 .navbar {
-  background-color: #ab86e6;
+  background-color: #65d11d;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .navbar .logo {
@@ -20,14 +21,33 @@ body {
   color: black;
 }
 
-nav {
+.navbar nav {
   display: none;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.navbar .container{
   display: flex;
   place-content: space-between;
 }
-/*# sourceMappingURL=main.css.map */
+.navbar .mobile-cta{
+  cursor: pointer;
+}
+.questionsArea{
+  color: #65A73A;
+  padding-left: 1em;
+  font-weight:bold;
+  font-size: .9em;
+}
+
+p{
+  margin: .5em 0 .5em 0;
+}
+
+p input{
+  border:solid 2px;
+  border-color: #C5C4C4;
+  border-radius: .3em;
+  width: 90%;
+  height: 1.5em;
+  color: #65A73A;
+}
