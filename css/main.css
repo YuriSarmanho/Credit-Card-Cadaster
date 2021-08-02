@@ -14,7 +14,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.2em; 
 }
 
 .navbar .logo span {
@@ -47,7 +47,7 @@ p input{
   border:solid 2px;
   border-color: #C5C4C4;
   border-radius: .3em;
-  width: 90%;
+  width: 60%;
   height: 1.5em;
   color: #497a29;
   font-size:1em;
@@ -64,15 +64,16 @@ button{
   cursor: pointer;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 500px){
+
   .questionsArea{
     display: block;
-    width: 400px;   
+    width: 550px;   
   }
 
   .navbar nav{
     display: flex;
-    height:auto;
+    height:0;
     width:500px;
     text-align: justify ;
     float: left;
@@ -85,19 +86,21 @@ button{
   .navbar .container nav li{
     cursor: pointer;
   }
-
-  ul{
-   display: flex;
-   justify-content: space-between;
-  }
   li {
     list-style-type: none;
+  }
+  ul{
+   display: flex;
+   margin: 0;
+   margin-top:3px;
+  }
+  .navbar .container{
+    height: 100%;
   }
   ul a{
     color: white;
     font-size: 1em;
     padding: .1em 1em;
-    margin-left:60%;
     text-decoration:none;
   }
   .sendButton:hover{
