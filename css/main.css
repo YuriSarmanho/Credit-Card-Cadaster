@@ -100,4 +100,8 @@ button{
     margin-left:60%;
     text-decoration:none;
   }
+  .sendButton:hover{
+    background-color: #65A73A;
+    color: white;
+  }
 }
