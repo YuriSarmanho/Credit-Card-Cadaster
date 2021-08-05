@@ -2,11 +2,12 @@ body {
   margin: 0;
   background-color: #F2EFF3;
   font-family: 'Poppins';
+  padding: 0;
 }
 
 .navbar {
   background-color: #65d11d;
-  padding: 1em;
+  padding: .5em;
   margin-bottom: 1em;
 }
 
@@ -34,7 +35,6 @@ body {
 }
 .questionsArea{
   color: #65A73A;
-  padding-left: 1em;
   font-weight:bold;
   font-size: .9em;
 }
