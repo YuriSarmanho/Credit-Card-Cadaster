@@ -1,49 +1,46 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: #F2EFF3;
   font-family: 'Poppins';
-  padding: 0;
 }
 
-.navbar {
+.navbar{
   background-color: #65d11d;
-  padding: .5em;
   margin-bottom: 1em;
 }
 
-.navbar .logo {
+.logo {
   text-decoration: none;
   font-weight: bold;
   color: white;
-  font-size: 1.2em; 
+  font-size: 1.2em;
+  padding-left:1em ; 
 }
 
-.navbar .logo span {
+span {
   color: black;
 }
 
-.navbar nav {
-  display: none;
-}
-
-.navbar .container{
+.container{
   display: flex;
   place-content: space-between;
 }
-.navbar .mobile-cta{
+.mobile-cta{
   cursor: pointer;
 }
 .questionsArea{
   color: #65A73A;
   font-weight:bold;
   font-size: .9em;
+  padding-left: 1em;
 }
 
 p{
   margin: .5em 0 .5em 0;
 }
 
-p input{
+input{
   border:solid 2px;
   border-color: #C5C4C4;
   border-radius: .3em;
@@ -71,7 +68,7 @@ button{
     width: 550px;   
   }
 
-  .navbar nav{
+  .nav{
     display: flex;
     height:0;
     width:500px;
@@ -79,14 +76,12 @@ button{
     float: left;
   }
 
-  .navbar .container .mobile-cta{
+  .mobile-cta{
     display: none;
   }
 
-  .navbar .container nav li{
+  li{
     cursor: pointer;
-  }
-  li {
     list-style-type: none;
   }
   ul{
@@ -94,14 +89,15 @@ button{
    margin: 0;
    margin-top:3px;
   }
-  .navbar .container{
+  .container{
     height: 100%;
   }
   
   ul a{
     color: white;
     font-size: 1em;
-    padding: .1em 1em;
+    padding: .1em .5em;
+    margin: .1em;
     text-decoration:none;
     
   }
@@ -109,7 +105,7 @@ button{
     background-color: #65A73A;
     color: white;
   }
-  ul a:hover{
+  a:hover{
     background-color: #65A73A;
   }
 }
